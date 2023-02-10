@@ -2,4 +2,6 @@
 
 ## Focal Template With HTML and CSS only
 
-### Demo
+### Responsive Design
+
+#### Demo
