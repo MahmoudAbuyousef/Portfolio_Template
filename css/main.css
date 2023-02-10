@@ -650,4 +650,8 @@ p {
   cursor: pointer;
 }
 
+.footer p:last-child .heart {
+  color: red;
+}
+
 /* End Footer */
