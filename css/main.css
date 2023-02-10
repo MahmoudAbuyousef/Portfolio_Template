@@ -1,0 +1,653 @@
+/* Start Global */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+button {
+  cursor: pointer;
+  border: 3px solid #2ecc71;
+  background: none;
+  font-weight: 900;
+  padding: 5px;
+  color: #2ecc71;
+}
+
+p {
+  color: #000;
+  line-height: 1.7;
+}
+
+/* End  Global */
+
+/* Start Header */
+.header .slider {
+  height: 100vh;
+  background-image: url("../images/hero-bg.webp");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .slider .intro {
+  text-align: center;
+  width: 50%;
+}
+
+.header .slider .intro h2 {
+  color: #fff;
+  padding: 5px;
+  border-top: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+  font-size: 40px;
+}
+
+.header .slider .intro button {
+  padding: 10px;
+  color: #fff;
+  background: none;
+  margin: 10px 0;
+  border: 3px solid #fff;
+}
+
+@media (max-width: 576px) {
+  .header .slider .intro h2 {
+    font-size: initial;
+  }
+}
+@media (min-width: 577px) and (max-width: 991px) {
+  .header .slider .intro h2 {
+    font-size: 25px;
+  }
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #252f31;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  position: relative;
+}
+
+.navbar .nav-link li i {
+  display: none;
+}
+
+.navbar .nav-link li .sub-link {
+  display: flex;
+}
+
+.navbar .nav-link li .sub-link li a {
+  padding: 10px;
+  color: #fff;
+}
+
+.navbar .nav-link li .sub-link li a:hover {
+  color: #2ecc71;
+}
+
+@media (max-width: 576px) {
+  .navbar .nav-link li i {
+    display: block;
+  }
+  .navbar .nav-link li .sub-link {
+    display: none;
+  }
+  .navbar .nav-link li:hover .sub-link {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 70%;
+    background-color: #252f31;
+  }
+  .navbar .nav-link li:hover .sub-link li {
+    padding: 8px 0;
+  }
+  .navbar .nav-link li:hover .sub-link li:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .navbar .nav-link li i {
+    display: block;
+  }
+  .navbar .nav-link li .sub-link {
+    display: none;
+  }
+  .navbar .nav-link li:hover .sub-link {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 70%;
+    background-color: #252f31;
+  }
+  .navbar .nav-link li:hover .sub-link li {
+    padding: 8px 0;
+  }
+  .navbar .nav-link li:hover .sub-link li:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+/* End Header */
+
+/* Start features */
+.features .container {
+  display: flex;
+}
+
+.feat {
+  margin: 10px;
+}
+
+@media (max-width: 576px) {
+  .features .container {
+    flex-wrap: wrap;
+  }
+  .feat {
+    width: 70%;
+    margin: 10px;
+  }
+}
+
+/* End features */
+/* Start About */
+.about {
+  background-color: #f2f2f2;
+}
+
+.about .container {
+  width: 100%;
+  display: flex;
+}
+
+.about .image,
+.about .info {
+  width: 50%;
+  margin: 10px;
+}
+
+.about .image img {
+  width: 100%;
+}
+
+.about .info h2,
+.about .info p {
+  margin: 30px 0;
+}
+
+.about .info .hobbies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about .info .hobbies .item {
+  width: 50%;
+  margin: 20px 0;
+}
+
+.about .info .hobbies .item i {
+  color: #2ecc71;
+  font-size: 25px;
+}
+
+@media (max-width: 576px) {
+  .about .container {
+    flex-wrap: wrap;
+  }
+  .about .image,
+  .about .info {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 766px) {
+  .about .container {
+    flex-wrap: wrap;
+  }
+  .about .image,
+  .about .info {
+    width: 100%;
+  }
+}
+
+/* End About */
+
+/* Start Skills */
+.skills .container {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills .mySkills,
+.skills .progress {
+  width: 50%;
+}
+
+.skills .mySkills h2,
+.skills .mySkills p {
+  margin: 20px 0;
+}
+
+.skills .progress {
+  margin: 20px 0;
+}
+
+.skills .progress h3 {
+  margin: 10px 0;
+}
+
+.skills .progress span {
+  display: block;
+  width: 65%;
+  border-radius: 20px;
+  text-align: right;
+  color: #fff;
+  background-color: #ddd;
+}
+
+.skills .progress span .degre {
+  background-color: #2ecc71;
+}
+
+.skills .progress span {
+  width: 65%;
+}
+.skills .progress span .degre1 {
+  width: 90%;
+}
+.skills .progress span .degre2 {
+  width: 95%;
+}
+.skills .progress span .degre3 {
+  width: 80%;
+}
+.skills .progress span .degre4 {
+  width: 85%;
+}
+.skills .progress span .degre5 {
+  width: 95%;
+}
+
+@media (max-width: 576px) {
+  .skills .container {
+    flex-wrap: wrap;
+  }
+  .skills .mySkills,
+  .skills .progress {
+    width: 100%;
+  }
+}
+
+/* End Skills */
+
+/* Start Resume */
+
+.resume {
+  margin-top: 30px;
+  background-color: #f2f2f2;
+  padding: 30px;
+  text-align: center;
+}
+
+.resume button {
+  margin: 10px 0;
+}
+
+/* End Resume */
+
+/* start Education */
+.education .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.education .myEducation,
+.education .experance {
+  width: 50%;
+}
+
+.education .myEducation h2,
+.education .myEducation p,
+.education .experance h2,
+.education .experance p {
+  margin: 10px 0;
+}
+
+.education .myEducation p {
+  width: 90%;
+}
+
+.education .experance .one span:last-of-type {
+  display: block;
+  width: fit-content;
+  padding: 5px;
+  margin: 20px 0;
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .education .container {
+    flex-wrap: wrap;
+  }
+  .education .myEducation,
+  .education .experance {
+    width: 100%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  .education .container {
+    flex-wrap: wrap;
+  }
+  .education .myEducation,
+  .education .experance {
+    width: 100%;
+  }
+}
+
+/* End Education */
+
+/* Start Work Exeperance */
+.experance .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.experance .work-experance {
+  width: 40%;
+}
+
+.experance .work-experance h2,
+.experance .work-experance p {
+  margin: 10px;
+}
+
+.experance .certaficat {
+  width: 50%;
+  margin-top: 40px;
+}
+
+.experance .certaficat .certafic {
+  margin: 20px 0;
+}
+
+.experance .certaficat .certafic h2,
+.experance .certaficat .certafic p,
+.experance .certaficat .certafic hr {
+  margin: 10px 0;
+}
+
+.experance .certaficat .one span:last-of-type {
+  display: block;
+  background-color: #2ecc71;
+  width: fit-content;
+  padding: 5px;
+  margin: 20px 0;
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .experance .container {
+    flex-wrap: wrap;
+  }
+  .experance .work-experance,
+  .experance .certaficat {
+    width: 100%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  .experance .container {
+    flex-wrap: wrap;
+  }
+  .experance .work-experance,
+  .experance .certaficat {
+    width: 100%;
+  }
+}
+/* End Work Exeperance */
+
+/* Start testimonials */
+.testimonials {
+  text-align: center;
+  background-color: #f1f1f1;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.testimonials span {
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.testimonials blockquote {
+  line-height: 1.7;
+  font-weight: bold;
+  color: #000;
+  font-style: italic;
+}
+
+.testimonials ul {
+  margin: 10px 0;
+}
+
+.testimonials ul li {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #2ecc71;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.testimonials ul li.active {
+  background-color: #2ecc71;
+}
+
+.testimonials ul li:hover {
+  background-color: #2ecc71;
+}
+
+/* End testimonials */
+
+/* Start Protofolio */
+.portofolio .container {
+  padding: 20px 0;
+}
+
+.portofolio h2 {
+  text-align: center;
+}
+
+.portofolio p {
+  text-align: center;
+}
+
+.portofolio .our-work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portofolio .our-work .item {
+  width: calc((100% - 80px) / 4);
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.portofolio .our-work .item img {
+  width: 100%;
+  transition: all 1s;
+}
+
+.portofolio .our-work .item:hover img {
+  transform: scale(1.1);
+}
+
+.portofolio .our-work .item a {
+  display: block;
+}
+
+.portofolio .our-work .item .demo {
+  width: fit-content;
+  margin: 5px auto;
+  color: #2ecc71;
+  border-radius: 20px;
+  padding: 7px;
+  border: 2px solid #2ecc71;
+}
+
+@media (max-width: 576px) {
+  .portofolio .our-work .item {
+    width: 100%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  .portofolio .our-work .item {
+    width: calc((100% - 20px) / 2);
+  }
+}
+
+
+/* End Protofolio */
+
+/* Start Contact me */
+.contact {
+  background-color: #252f31;
+}
+.contact .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+
+.contact-me {
+  width: 50%;
+}
+
+.contact .contact-me h2 {
+  color: #fff;
+  margin: 10px 0;
+}
+
+.contact .contact-me p {
+  margin: 10px 0;
+  color: #fff;
+  width: 90%;
+}
+
+.contact .form-contact {
+  width: 50%;
+}
+
+.contact .form-contact form {
+  width: 100%;
+}
+
+.contact .form-contact form label {
+  display: block;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.contact .form-contact form label .recuired {
+  color: red;
+}
+
+.contact .form-contact form input {
+  background-color: #808080;
+  padding: 6px;
+  width: 100%;
+}
+
+.contact .form-contact form textarea {
+  background-color: #808080;
+  width: 100%;
+}
+
+.contact .form-contact form input[type="submit"] {
+  display: block;
+  margin-top: 10px;
+  color: #fff;
+  background-color: #000;
+  padding: 10px;
+  width: 130px;
+  font-weight: bold;
+}
+
+@media (max-width: 576px) {
+  .contact .contact-me,
+  .contact .form-contact {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .contact .contact-me,
+  .contact .form-contact {
+    width: 100%;
+  }
+}
+
+/* End Contact me */
+
+/* Start Footer */
+.footer .container {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #333;
+}
+
+.footer p {
+  text-align: center;
+  color: #fff;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footer ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* End Footer */
